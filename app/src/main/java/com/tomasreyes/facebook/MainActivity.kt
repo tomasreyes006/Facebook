@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     FacebookLoginScreen(navController = myNavController)
                 }
                 composable(route = "register") {
-                    FacebookRegisterScreen()
+                    FacebookRegisterScreen(navController = myNavController)
 
                 }
             }
