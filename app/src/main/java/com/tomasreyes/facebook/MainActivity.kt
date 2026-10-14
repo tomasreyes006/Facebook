@@ -28,10 +28,10 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier.fillMaxSize()
             ) {
                 composable(route = "login") {
-                    FacebookLoginScreen(navController = myNavController)
+                    FacebookLoginScreen(onClickRegister = { myNavController.navigate(route = "register") })
                 }
                 composable(route = "register") {
-                    FacebookRegisterScreen(navController = myNavController)
+                    FacebookRegisterScreen(onClickBack = { myNavController.popBackStack() })
 
                 }
             }
