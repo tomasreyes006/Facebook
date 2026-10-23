@@ -16,6 +16,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.tomasreyes.facebook.ui.screens.FacebookLoginScreen
 import com.tomasreyes.facebook.ui.screens.FacebookRegisterScreen
+import com.tomasreyes.facebook.ui.screens.FeedScreen
 import com.tomasreyes.facebook.ui.theme.FacebookTheme
 
 class MainActivity : ComponentActivity() {
@@ -44,7 +45,7 @@ class MainActivity : ComponentActivity() {
                     FacebookRegisterScreen(onClickBack = { myNavController.popBackStack() })
                 }
                 composable(Routes.FEED) {
-
+                    FeedScreen()
                 }
             }
         }

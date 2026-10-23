@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.sp
 
 @Preview (showSystemUi = true)
 @Composable
-fun feedScreen(){
+fun FeedScreen(){
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
